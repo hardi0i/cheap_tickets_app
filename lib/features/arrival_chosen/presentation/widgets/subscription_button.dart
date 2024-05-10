@@ -27,10 +27,13 @@ class _SubscriptionButtonState extends State<SubscriptionButton> {
         splashFactory: InkRipple.splashFactory,
       ),
       child: Container(
-        width: double.infinity,
         height: 51,
         margin: const EdgeInsets.symmetric(
           horizontal: 16.0,
+        ),
+        decoration: BoxDecoration(
+          color: cheapTicketsPalette.modalBackgroundColor,
+          borderRadius: BorderRadius.circular(8.0),
         ),
         child: ListTile(
           onTap: () => setState(() {
